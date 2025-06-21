@@ -13,9 +13,7 @@ jobs:
       - name: install Dependencies
         run: npm ci
       - name: Run Linters
-        uses: wearerequired/lint-action@v2
-        with:
-          eslint: true
+        run: npm run lint
   test:
     runs-on: ubuntu-latest
     steps:
