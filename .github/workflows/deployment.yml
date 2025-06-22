@@ -1,5 +1,8 @@
 name: Deployment workflows
-on: push
+on: 
+  push: 
+    branches:
+      - dev
 jobs:
   eslint:
     runs-on: ubuntu-latest
