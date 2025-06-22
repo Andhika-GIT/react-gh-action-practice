@@ -3,6 +3,8 @@ on:
   pull_request:
     types:
       - opened
+    branches:
+      - main
 jobs:
   eslint:
     runs-on: ubuntu-latest
