@@ -2,6 +2,8 @@ import { string } from 'prop-types';
 
 import './HelpBox.css';
 
+
+// important changes to skip ci ( skip gh action workflows )
 function HelpBox({ title, text }) {
   return (
     <article className="help-box">
