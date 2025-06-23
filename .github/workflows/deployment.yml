@@ -1,7 +1,13 @@
 name: Deployment workflows
 on: 
-  push: 
+  pull_request:
+    types:
+      - opened
     branches:
+      - main
+  push:
+    branches:
+      - main
       - dev
 jobs:
   eslint:
